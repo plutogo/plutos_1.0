@@ -1,0 +1,1 @@
+int main() { std::unordered_map<std::string, int> counts; std::string line; while (getline(std::cin, line)) // Koenig Lookup counts[line]++; for (const auto& item : counts) { if (item.second > 1) printf("%d\t%s\n", item.second, item.first.c_str()); } }
